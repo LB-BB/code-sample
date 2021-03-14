@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { User } = require("../db/models");
 module.exports = router;
 
-//This piece of code comes from an e-Commerce website I built with a team. The site simulates luxury property-buying. The below section belongs to the API of the project involving users, their data, and their security.
+//This piece of code comes from an e-Commerce website I built with a team. The site simulates luxury property-buying. The below section belongs to the API Express routes of the project involving users, their data, and their security.
 
 //This validator sends an empty string in order to take advantage of type coercion.
 const isAdmin = (req, res, next) => (req.user.isAdmin ? next() : res.send(""));
